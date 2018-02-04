@@ -1,0 +1,78 @@
+/* General Rules */
+
+html {
+  font-size: 16px;
+}
+
+.flex-container {
+  display: flex;
+}
+
+
+/* Header Rules */
+
+header {
+  border-bottom: 1px solid black;
+  box-shadow: 0px 2px 10px #7F0200;
+  background-color: #7F0200;
+  color: white;
+  height: 64px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  overflow: hidden;
+}
+
+.title {
+  position:inherit;
+  vertical-align: baseline;
+  margin: 0;
+  padding: 65px;
+  border: 0;
+  font-size: 1.5rem;
+}
+
+.colmar {
+
+}
+
+.academy {
+  color: gold;
+}
+
+header img {
+  padding-left: 24px;
+}
+
+
+header ul li {
+  display: inline-block;
+  padding-right: 24px;
+}
+
+
+
+/* Learn Something Rules */
+
+main {
+  margin-top: 5rem;
+}
+
+/* Info Rules */
+
+
+
+/* Start Learning Rules */
+
+
+
+/* Thesis Exhibit Rules */
+
+
+
+/* Footer Rules */
