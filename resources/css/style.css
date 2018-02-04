@@ -5,8 +5,24 @@ html {
   font-family: "Ubuntu", "Helvetica", sans-serif;
 }
 
+body {
+  width:
+}
+
+section {
+  margin-top: 32px;
+}
+
 .flex-container {
   display: flex;
+}
+
+.temp-container {
+  width: 2px;
+}
+
+.gold {
+  color: gold;
 }
 
 
@@ -36,10 +52,6 @@ header {
   padding: 65px;
   border: 0;
   font-size: 1.5rem;
-}
-
-.academy {
-  color: gold;
 }
 
 header img {
@@ -74,10 +86,6 @@ main img {
   flex-direction: column;
 }
 
-.learn-something {
-  color: gold;
-}
-
 .school-day {
   font-weight: lighter;
 }
@@ -93,14 +101,125 @@ main img {
 
 /* Info Rules */
 
+.information-container {
+  display: flex;
+  flex-flow: flex-start;
+  width: 100%;
+  padding: 24px;
+  margin: 0 auto;
+  background-color: lightgrey;
+  left: 0;
+  right: 0;
+}
+
+.information-main {
+  padding-right: 24px;
+}
+
+.information-main img {
+  max-width: 100%;
+}
+
+.information-main h2, h3 {
+  color: #7F0200;
+}
+
+.info-child-container {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+.info-child-container img {
+  max-width: 35%;
+  height: auto;
+  padding: 16px;
+}
+
+.info-box {
+  display: flex;
+  align-items: center;
+}
+
+.info-text {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.info-text h3, a {
+  color: #7F0200;
+}
 
 
 /* Start Learning Rules */
 
+.learning-container {
+  align-items: center;
+  text-align: center;
+  background-color: whitesmoke;
+  margin-top: 0;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.course-parent {
+  display: inline-flex;
+  flex-flow: wrap;
+  align-items: center;
+  width: 80%;
+  height: 100%;
+  justify-content: center;
+}
+
+.course-child {
+  margin: 0;
+  padding: 24px;
+  margin: 10px;
+  max-width: 300px;
+  background-color: white;
+}
+
+.course-child img {
+  max-width: 100%;
+}
+
+.course-child h3 {
+  color: #7F0200;
+}
 
 
 /* Thesis Exhibit Rules */
 
+.thesis-container {
+  display: flex;
+  flex-flow: flex-start;
+  width: 100%;
+  padding: 24px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  align-items: center;
+  margin-top: 0;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
 
+.thesis-exhibit {
+  color: gold;
+  text-align: center;
+}
 
 /* Footer Rules */
+
+footer {
+  background-color: lightgrey;
+  padding-bottom: 6rem;
+  padding-top: 2rem;
+  display: flex;
+}
+
+.terms {
+  margin-left: 1000px;
+}
