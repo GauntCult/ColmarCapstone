@@ -10,20 +10,35 @@
 <!-- Header Section -->
 
     <header>
-      <img src="resources/assets/images/ic-logo.svg">
-      <div class="title">
+      <img class="desktop" src="resources/assets/images/ic-logo.svg">
+      <div class="title desktop">
         <span>COLMAR</span>
         <span class="gold">ACADEMY</span>
       </div>
-      <nav>
+      <nav class="desktop">
         <ul>
-          <li>On Campus</li>
-          <li>Online</li>
-          <li>For Companies</li>
-          <li>Sign In</li>
+          <li><a href="#">On Campus</a></li>
+          <li><a href="#">Online</a></li>
+          <li><a href="#">For Companies</a></li>
+          <li><a href="#">Sign In</a></li>
         </ul>
       </nav>
+
+      <!-- Responsive Header Section -->
+
+      <nav class="mobile">
+        <span>
+          <a href="#"><img src="resources/assets/images/ic-logo.svg" alt="Home"></a></span>
+        <span>
+          <a href="#"><img src="resources/assets/images/ic-on-campus.svg" alt="On Campus"></a></span>
+        <span>
+          <a href="#"><img src="resources/assets/images/ic-online.svg" alt="Online"></a></span>
+        <span>
+          <a href="#"><img src="resources/assets/images/ic-login.svg" alt="Login"></a></span>
+      </nav>
+
     </header>
+
 
 <!-- Banner Section -->
 
@@ -47,27 +62,30 @@
       </div>
       <div class="info-child-container">
         <div class="info-box">
-          <img src="resources/assets/images/information-orientation.jpg">
+          <img id="desktopimage" src="resources/assets/images/information-orientation.jpg">
+          <img id="mobileimage" src="resources/assets/images/information-orientation-mobile.jpg">
           <div class="info-text">
             <h3>Orientation Date</h3>
             <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
-            <a>Read More</a>
+            <p><a href="#">Read More</a></p>
           </div>
         </div>
         <div class="info-box">
-          <img src="resources/assets/images/information-campus.jpg">
+          <img id="desktopimage" src="resources/assets/images/information-campus.jpg">
+          <img id="mobileimage" src="resources/assets/images/information-campus-mobile.jpg">
           <div class="info-text">
             <h3>Our Campus</h3>
             <p>Find which campus is close by you</p>
-            <a>Read More</a>
+            <p><a href="#">Read More</a></p>
           </div>
         </div>
         <div class="info-box">
-          <img src="resources/assets/images/information-guest-lecture.jpg">
+          <img id="desktopimage" src="resources/assets/images/information-guest-lecture.jpg">
+          <img id="mobileimage" src="resources/assets/images/information-guest-lecture-mobile.jpg">
           <div class="info-text">
             <h3>Our Guest Lecture</h3>
             <p>Join a keynote with Graeme Douglas about managing organisational change</p>
-            <a>Read More</a>
+            <p><a href="#">Read More</a></p>
         </div>
         </div>
       </div>
@@ -80,42 +98,42 @@
       <h1 class="gold">Start Learning</h1>
       <div class="course-parent">
         <div class="course-child">
-          <img src="resources/assets/images/course-software.jpg">
+          <img id="desktopimage" src="resources/assets/images/course-software.jpg">
           <h3>Software Engineering</h3>
           <p>COURSES</p>
           <p>Web Development, Mobile Development, iOT, APIs</p>
         </div>
 
         <div class="course-child">
-          <img src="resources/assets/images/course-computer-art.jpg">
+          <img id="desktopimage" src="resources/assets/images/course-computer-art.jpg">
           <h3>Computer Art</h3>
           <p>COURSES</p>
           <p>Imaging, Web Design, Motion Graphics & Visual Effects, Computer Animation</p>
         </div>
 
         <div class="course-child">
-          <img src="resources/assets/images/course-design.jpg">
+          <img id="desktopimage" src="resources/assets/images/course-design.jpg">
           <h3>Design</h3>
           <p>COURSES</p>
           <p>User Experience Design, User Research, Visual Design</p>
         </div>
 
         <div class="course-child">
-          <img src="resources/assets/images/course-data.jpg">
+          <img id="desktopimage" src="resources/assets/images/course-data.jpg">
           <h3>Data</h3>
           <p>COURSES</p>
           <p>Data Science, Big Data, SQL, Data Visualization</p>
         </div>
 
         <div class="course-child">
-          <img src="resources/assets/images/course-business.jpg">
+          <img id="desktopimage" src="resources/assets/images/course-business.jpg">
           <h3>Business</h3>
           <p>COURSES</p>
           <p>Product Development, Business Development, Startup</p>
         </div>
 
         <div class="course-child">
-          <img src="resources/assets/images/course-marketing.jpg">
+          <img id="desktopimage" src="resources/assets/images/course-marketing.jpg">
           <h3>Marketing</h3>
           <p>COURSES</p>
           <p>Analytics, Content Marketing, Mobile Marketing</p>
@@ -126,14 +144,14 @@
 <!-- Thesis Exhibit Section -->
       <h1 class="thesis-exhibit">Thesis Exhibit</h1>
     <section class="thesis-container">
-      <div class="information-main">
+      <div class="thesis-main">
         <video width="100%" height="auto" controls>
           <source src="resources/assets/videos/thesis.mp4" type="video/mp4">
         </video>
-        <h3>Reimagine Urban</h3>
-        <p>"If you study here, you too could learn how to use words like 'reimagine' with a straight face."</p>
+        <h3 id="desktopimage">Reimagine Urban</h3>
+        <p id="desktopimage">"If you study here, you too could learn how to use words like 'reimagine' with a straight face."</p>
       </div>
-      <div class="info-child-container">
+      <div id="desktopimage" class="info-child-container">
         <div class="info-box">
           <img src="resources/assets/images/thesis-fisma.jpg">
           <div class="info-text">
@@ -156,10 +174,11 @@
 
     <footer>
       <div>
-        <span> &copy; 2016 Colmar Academy. All rights reserved</span>
+        <p> &copy; 2016 Colmar Academy. All rights reserved</p>
       </div>
-      <div class="terms">
-        <span>Terms Privacy</span>
+      <div id="desktopimage">
+        <span><a href="#">Terms</a></span>
+        <span><a href="#">Privacy</a></span>
       </div>
     </footer>
 
