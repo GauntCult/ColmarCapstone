@@ -1,7 +1,8 @@
 /*
 
 To do list:
-1. Fix border and width problems.
+1. Add some padding to banner in desktop mode.
+2. Double check all dimensions for mobile sizing.
 
 */
 
@@ -15,7 +16,8 @@ html {
 }
 
 body {
-  width: 100%
+  width: 100%;
+  margin: 0;
 }
 
 section {
@@ -54,6 +56,7 @@ section {
     display: none;
   }
 }
+
 /* Header Rules */
 
 header {
@@ -153,8 +156,9 @@ a {
 main {
   width: 100%;
   margin-top: 6rem;
-  margin-right: 1.5rem;
+  /* margin-right: 1.5rem; */
   margin-bottom: 1.5rem;
+  padding-left: 1rem;
   display: flex;
   align-items: center;
 }
@@ -194,18 +198,18 @@ main img {
 
   main {
     width: 100%;
-    margin: 4.5rem 0 0 0;
+    margin: 5rem 0 0 0;
     padding: 0;
     left: 0;
     right: 0;
     display: flex;
     flex-direction: column;
+
   }
 
   main img {
     width: 100%;
-    align-items: center;
-    margin-left: 0.5rem;
+    margin: 0;
   }
 
   .learn-text-box {
@@ -216,6 +220,7 @@ main img {
 
   .start-here {
     width: 100%;
+    margin-left: 0.5rem;
   }
 
 }
@@ -226,7 +231,7 @@ main img {
   display: flex;
   flex-flow: flex-start;
   width: 100%;
-  padding: 1.5rem;
+  padding: 1rem;
   margin: 0 auto;
   background-color: lightgrey;
   left: 0;
@@ -336,9 +341,10 @@ main img {
   background-color: whitesmoke;
   margin-top: 0;
   margin-left: 0;
+  padding: 1.5rem 0 1.5rem 0;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-  left: 0;
+
 }
 
 .course-parent {
@@ -423,8 +429,17 @@ main img {
 
 @media only screen and (max-width: 650px) {
 
+  .thesis-container {
+    padding: 0;
+  }
+
+  .thesis-main {
+    padding: 0;
+  }
+
   .thesis-main video {
-    width: 101%;
+    width: 100%;
+    padding-bottom: 1.5rem;
   }
 
 }
